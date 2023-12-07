@@ -25,45 +25,6 @@ using NAudio.Wave;
 //  Используется для сохранения необходимых параметров
 using TurauaPW.Properties;
 
-////////////////////////////////////////////////////////////
-//         く__,.ヘヽ. / ,ー､ 〉
-//          　　　　　＼ ', !-─‐-i　/　/´
-//          　　　 　 ／｀ｰ '　　　 L/／｀ヽ､
-//                / ／,　 /| ,　 ,　　　 ',
-//               ｲ / / -‐/ ｉ L_ ﾊ ヽ!　 i
-//          　　　 ﾚ ﾍ 7ｲ｀ﾄ　 ﾚ'ｧ-ﾄ､!ハ|　 |
-//          　　　　 !,/7 '0'　　 ´0iソ| 　 |　　　
-//          　　　　 |.从"　　_　　 ,,,, / |./ 　 |
-//          　　　　 ﾚ'| i＞.､,,__　_,.イ / 　.i 　|
-//          　　　　　 ﾚ'| | / k_７_/ﾚ'ヽ, ﾊ.　|
-//          　　　　　　 | |/i 〈|/　 i　,.ﾍ |　i　|
-//          　　　　　　.|/ /　ｉ： 　 ﾍ!　　＼　|
-//          　　　 　 　 kヽ>､ﾊ 　 _,.ﾍ､ 　 /､!
-//          　　　　　　 !'〈//｀Ｔ´', ＼ ｀'7'ｰr'
-//          　　　　　　 ﾚ'ヽL__|___i,___,ンﾚ|ノ
-//          　　　　　 　　　ﾄ-,/　|___./
-//          　　　　　 　　　'ｰ'　　!_,.:
-//////////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 namespace TurauaPW
 {
@@ -77,11 +38,6 @@ namespace TurauaPW
             InitializeComponent();
         }
 
-
-
-
-
-
         /// <summary>   Обработка закгрузки приложения
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -94,19 +50,10 @@ namespace TurauaPW
         /// </summary>
 
 
-
-
-
-
-        /// <summary>                                                            ___███████▀◢▆▅▃ 　　　   　　 　　　 ▀▀████ONII CHAN
-        ///     ФУНКЦИЯ ДЛЯ КОНВЕРТАЦИИ ФАЙЛА ТИПА .mp3 В ФОРМАТ ТИПА .wav       ___██████▌◢▀█▓▓█◣   　　　　　　▂▃▃　 ████onii chan
-        /// <param name="path_mp3"> Путь к файлу типа .mp3  </param>             __▐▐█████▍▌▐▓▓▉　　　　　　　◢▓▓█ ▼ ████ONII CHAN
-        /// <param name="path_wav"> Путь к создаваемому файлу типа .wav </param> __ ▌██████▎　 ▀▀▀　　　　　　 　█▓▓▌ ▌ █████▌onii chan
-        ///                                                                      _▐ ██████▊　 ℳ 　　　　　　　▀◥◤▀    ▲████▉ONII CHAN
-        ///                                                                      _▊ ███████◣ 　　　　　　  ′　　　ℳ　 ▃◢██████▐onii chan
-        ///                                                                      _ ▉ ████████◣ 　　　　 ▃、　　　　　◢███▊███ ONII CHAN
-        ///                                                                      _▉　 █████████▆▃　　　　　　　 ◢████▌ ███  onii chan
-        ///                                                                      _ ▉　 ████▋████▉▀◥▅▃▃▅▇███▐██▋　▐██ONII CHAN
+        /// <summary>                                                           
+        ///     ФУНКЦИЯ ДЛЯ КОНВЕРТАЦИИ ФАЙЛА ТИПА .mp3 В ФОРМАТ ТИПА .wav       
+        /// <param name="path_mp3"> Путь к файлу типа .mp3  </param>             
+        /// <param name="path_wav"> Путь к создаваемому файлу типа .wav </param>
         private void ConverToWavFile(string path_mp3, string path_wav)
         {
             using (var reader = new Mp3FileReader(path_mp3))
@@ -116,10 +63,6 @@ namespace TurauaPW
         }
         /// </summary>
         
-
-
-
-
 
         /// <summary>   ФУНКЦИЯ ПОЛУЧЕНИЯ ДАННЫХ ИЗ Excel
         /// <param name="path">Путь до файла Excel</param>
@@ -150,20 +93,13 @@ namespace TurauaPW
         /// </summary>
 
 
-
-
-
-
         /// <summary>   Возвращает строку поключения к типу БД "Interbase"
-        ///                                                           ___███████▀◢▆▅▃ 　　　   　　 　　　 ▀▀████ONII CHAN
-        ///      -   DB_path     ->  путь к подключаемой БД          ___██████▌◢▀█▓▓█◣   　　　　　　▂▃▃　 ████onii chan 
-        ///      -   UserDB      ->  имя пользователя БД             __▐▐█████▍▌▐▓▓▉　　　　　　　◢▓▓█ ▼ ████ONII CHAN
-        ///      -   UserPassDB  ->  пароль пользователя             __ ▌██████▎　 ▀▀▀　　　　　　 　█▓▓▌ ▌ █████▌onii chan
-        ///      -   DB_Port     ->  порт соединения                 _▐ ██████▊　 ℳ 　　　　　　　▀◥◤▀    ▲████▉ONII CHAN
-        ///      -   DB_Host     ->  хост, где расположена БД        _▊ ███████◣ 　　　　　　  ′　　　ℳ　 ▃◢██████▐onii chan
-        ///                                                          _ ▉ ████████◣ 　　　　 ▃、　　　　　◢███▊███ ONII CHAN
-        ///                                                          _▉　 █████████▆▃　　　　　　　 ◢████▌ ███  onii chan
-        ///                                                          _ ▉　 ████▋████▉▀◥▅▃▃▅▇███▐██▋　▐██ONII CHAN
+        ///                                                          
+        ///      -   DB_path     ->  путь к подключаемой БД           
+        ///      -   UserDB      ->  имя пользователя БД             
+        ///      -   UserPassDB  ->  пароль пользователя            
+        ///      -   DB_Port     ->  порт соединения                
+        ///      -   DB_Host     ->  хост, где расположена БД                                                          
         private static IBConnectionStringBuilder
             BuildConnectionStringBuilder
                 (   string DB_path,
@@ -182,10 +118,6 @@ namespace TurauaPW
             return builder;
         }
         /// </summary>
-
-
-
-
 
 
         /// <summary>   Выполнение SQL запроса к БД(INSERT SPR_SPEECH_TABLE)
@@ -263,10 +195,6 @@ namespace TurauaPW
         /// </summary> 
 
 
-
-
-
-
         /// <summary>    Выполнение SQL запроса к БД (INSERT SPR_SP_DATA_1_TABLE)
         /// <param name="conn"> Строка подключения к БД </param>
         /// <param name="S_RECORTYPE"> Тип записи   </param>
@@ -312,10 +240,6 @@ namespace TurauaPW
         /// </summary>
 
 
-
-
-
-
         /// <summary>  Функции для работы интерфейса
                 /// Функция открытия\закрытия панели настроек
         private void OpenCloseSetingsPanel(int param) 
@@ -353,10 +277,6 @@ namespace TurauaPW
         /// </summary>
 
 
-
-
-
-
         /// <summary>   Функция копирования пустой БД
         /// <param name="fileName">Путь и имя файла для копирования файла</param>
         /// <param name="pathDB">TextBox для хранения пути БД в которую еплицируются данные</param>
@@ -375,10 +295,6 @@ namespace TurauaPW
             }
         }
         /// </summary>
-
-
-
-
 
 
         /// <summary>   Функция определения номера столбца с данными
@@ -460,10 +376,6 @@ namespace TurauaPW
             }
         }
         /// </summary>
-
-
-
-
 
 
         /// <summary>
@@ -780,11 +692,7 @@ namespace TurauaPW
         }
         /// </summary>
 
-
-
-
-
-        
+      
         /// <summary> ВЕРХНЕЕ МЕНЮ
             ///  Обработка открытия файла
         private void TSMItemFileOpen_Click(object sender, EventArgs e)
@@ -839,10 +747,6 @@ namespace TurauaPW
         /// </summary>
 
 
-
-
-
-
         /// <summary> ПАНЕЛЬ НИЖЕ МЕНЮ
         ///  Открытие определенного листа в Excel
         private void tSselectListDataExcel_SelectedIndexChanged(object sender, EventArgs e)
@@ -893,10 +797,6 @@ namespace TurauaPW
             }
         }
         /// </summary>
-
-
-
-
 
 
         /// <summary>   ПАНЕЛЬ НАСТРОЕК
@@ -972,10 +872,6 @@ namespace TurauaPW
             SaveDataSettings();
         }
         /// </summary>
-
-
-
-
 
 
         /// <summary>   Обработка ввода только цифровых значений в TextBox для номеров столбцов
@@ -1062,20 +958,12 @@ namespace TurauaPW
         /// </summary>
 
 
-
-
-
-
         /// <summary>   Обработка закрытия приложения
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             SaveDataSettings();
         }
         /// </summary>
-
-
-
-
 
 
         /// <summary>   Обработка закрытия панели настроек
@@ -1097,10 +985,6 @@ namespace TurauaPW
             OpenCloseSetingsPanel(1);
         }
         /// </summary>
-
-
-
-
 
 
         /// <summary>   Обработка индикации репликации (progressBar)
